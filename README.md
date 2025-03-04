@@ -1,5 +1,8 @@
 # Landing Page - [ThinDog]
+
 [View Live Page](https://sandrodevx.github.io/Bootstrap-Thindog/)
+
+
 This project is a **modern and responsive Landing Page** built with **HTML and Bootstrap CSS**. It is designed to showcase a product, service, or company with a clean and professional design.  
 
 ## Features
