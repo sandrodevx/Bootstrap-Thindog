@@ -1,8 +1,8 @@
 /* Gradient Background with Smooth Animation */
 .gradient-background {
   background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
-  background-size: 200% 200%; /* Increased for smoother transitions */
-  animation: gradient-animation 12s ease infinite; /* Faster animation for better engagement */
+  background-size: 200% 200%;
+  animation: gradient-animation 12s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -17,78 +17,147 @@
   }
 }
 
+/* Modern Pricing Table Styles */
+:root {
+  --bg-color: #121212;
+  --text-color: white;
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --highlight: #ffcc00;
+  --button-bg: #ffcc00;
+  --button-hover: #e6b800;
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] {
+  --bg-color: #f0f0f0;
+  --text-color: #121212;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --highlight: #ff9900;
+  --button-bg: #ff9900;
+  --button-hover: #e68a00;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--button-bg);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-theme:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+.pricing-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.pricing-plan {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.plan-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--highlight);
+}
+
+.plan-price {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.plan-features li {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.plan-button {
+  background: var(--button-bg);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.plan-button:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+}
+
 /* Icon Square with Hover Effect */
 .icon-square {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
-  background: rgba(255, 255, 255, 0.1); /* Subtle background for contrast */
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  margin: 0 auto 15px;
+  font-size: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .icon-square:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Profile Image with Border and Hover Effect */
-.profile-img {
-  border-radius: 50%;
-  height: 100px;
-  width: 100px; /* Ensure it's a perfect circle */
-  object-fit: cover; /* Ensure the image fits well */
-  border: 3px solid #fff; /* White border for contrast */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-.profile-img:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-/* Additional Modern Enhancements */
-/* Smooth Scroll Behavior */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Button Enhancements */
-.btn {
-  transition: all 0.3s ease; /* Smooth transitions for buttons */
-}
-
-.btn:hover {
-  transform: translateY(-2px); /* Lift effect on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-}
-
-/* Responsive Typography */
-body {
-  font-family: 'Inter', sans-serif; /* Modern font */
-  line-height: 1.6;
-  color: #333; /* Darker text for better readability */
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; /* Bold headings */
-  margin-bottom: 1rem;
-}
-
-/* Section Padding for Better Spacing */
-section {
-  padding: 4rem 0; /* Consistent spacing */
-}
-
-/* Card Enhancements */
-.card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-.card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+/* Responsive Design */
+@media (max-width: 900px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
