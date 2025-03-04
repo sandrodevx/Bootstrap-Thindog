@@ -28,4 +28,3 @@ This project is a **modern and responsive Landing Page** built with **HTML and B
 
 This project is open-source and can be used for personal or commercial purposes. 
  
-https://sandrodevx.github.io/Bootstrap-Thindog/
