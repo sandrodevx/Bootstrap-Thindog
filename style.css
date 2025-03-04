@@ -20,7 +20,7 @@
 /* Modern Pricing Table Styles */
 :root {
   --bg-color: #121212;
-  --text-color: white;
+  --text-color: #ffffff; /* Asegurar contraste adecuado */
   --card-bg: rgba(255, 255, 255, 0.1);
   --highlight: #ffcc00;
   --button-bg: #ffcc00;
@@ -30,7 +30,7 @@
 
 [data-theme="light"] {
   --bg-color: #f0f0f0;
-  --text-color: #121212;
+  --text-color: #121212; /* Asegurar contraste adecuado */
   --card-bg: rgba(255, 255, 255, 0.9);
   --highlight: #ff9900;
   --button-bg: #ff9900;
